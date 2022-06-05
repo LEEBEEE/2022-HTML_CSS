@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: #1366c1;
+        }
+
+        legend {
+            font-size: 17px;
+            color: #1366c1;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>회원 가입을 환영합니다</h2>
+    <form action="/sign_up">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li>
+                    <label for="id">아이디 <input type="text" id="id"></label>
+                </li>
+                <li>
+                    <label for="mail">이메일 <input type="text" id="mail" value="@gmail.com"></label>
+                </li>
+                <li>
+                    <label for="pw">비밀번호 <input type="password" id="pw"></label>
+                </li>
+                <li>
+                    <label for="pw_r">비밀번호 확인 <input type="password" id="pw_r"></label>
+                </li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <label><input type="radio" name="mailing" value="o"> 메일 수신</label>
+            <label><input type="radio" name="mailing" value="x" checked> 메일 수신 안 함</label>
+        </fieldset>
+        <br>
+        <div id="button">
+            <input type="submit" value="가입하기">
+            <input type="reset" value="취소">
+        </div>
+    </form>
+</body>
+
+</html>
+<!--ctrl+a 전체선택 ctrl+k,f정렬-->

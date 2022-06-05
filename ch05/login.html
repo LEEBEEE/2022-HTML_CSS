@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action / method 백엔드할때 -->
+    <form action="/login" method="post">
+        <fieldset>
+            <legend>이거 쓰면 나중에 부트스트랩할 때 예쁨</legend>
+            <!-- label이 있으면... 글자 클릭했을 때 입력창으로 이동함 -->
+            <label>아이디 : <input type="text" name="user_id" value="기본적으로 입력되는 값"></label>
+            <!-- value는 보통 빈칸 초기화 누르면 value값으로 돌아감 -->
+            <label>비밀번호 : <input type="password" name="user_pw"></label>
+            <label for="user_gender">성별</label>
+            <div>
+                <input type="text" id="user_gender" name="user_gender">
+            </div>
+            <input type="submit" value="로그인">
+            <button>login</button>
+            <button type="button">fake</button>
+            <input type="reset" value="초기화">
+            <!-- 이 때는 value에 있는 게 버튼 안에 있는 텍스트 -->
+        </fieldset>
+    </form>
+
+    <input type="submit" value="서브밋버튼">
+    <input type="button" value="버튼버튼">
+    
+    <button type="submit">버튼버튼2</button>
+    <!-- 폼 안에 있을 때 submit은 제출 reset은 폼 초기화 버튼은 타입 설정(기본설정은 제출)폼 밖에서는 그냥 장식인듯 -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            li .new는 li 하위 태그 중(본인 포함x) class='new'
+            li.new li가 class='new'를 가지고 있어야함
+        */
+        
+        li > span:nth-of-type(1) {display: inline-block; width: 50px;}
+
+        li.new::after {
+            position: relative;
+            top: -1.5px;
+            content: 'NEW!!';
+            font-size: x-small;
+            padding: 2px 4px;
+            margin: 0 10px;
+            border-radius: 2px;
+            background-color: #f00;
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>제품 목록</h1>
+        <ul>
+            <li class="new">
+                <span>제품 A</span>
+            </li>
+            <li>
+                <span>제품 B</span>
+            </li>
+            <li>
+                <span>제품 C</span>
+            </li>
+            <li class="new">
+                <span>제품 D</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

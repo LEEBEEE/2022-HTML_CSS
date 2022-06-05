@@ -1,0 +1,22 @@
+body {background-color: #ccc;}
+form {
+    padding: 15px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    background-color: #fff;}
+ul > li {margin-bottom: 5px;}
+fieldset {border: 1px solid #ccc;}
+legend {font-weight: bold; font-size: large;}
+#signup label {display: inline-block; font-size: 13px; width: 110px;}
+input {
+    line-height: 15px;
+}
+input[required] {border: 1px solid #f00 }
+input[readonly] {border: none}
+#signup fieldset:last-child {
+    text-align: center;
+    border: none; margin-bottom: 0;
+}
+ul {list-style-type: none;}
+#signup button[type='submit'] {border: 1px solid #ccc; border-radius: 30px; padding: 5px; width: 75px;}
+#signup button[type='submit']:hover {background-color: #222; color: #fff;}

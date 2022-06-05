@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [class ~= 'button'] {color: red;}
+        [class = 'button'] {color: red;}
+        div[class ~= 'boutton'] {color: aquamarine;}
+        input[type="text"][value="안녕"] {color: aqua;}
+        /* 실시간으로 변경된 value값에는 반응X */
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="flat">메뉴 1</a></li>
+        <li><a href="#" class="flat">메뉴 2</a></li>
+        <li><a href="#" class="button">메뉴 3</a></li>
+        <li><a href="#" class="flat button">메뉴 4</a></li>
+        <input type="text" value="안녕"}
+    </ul>
+    <div class="button">메뉴 5</div>
+    <div class="flat button">메뉴 6</div>
+</body>
+</html>

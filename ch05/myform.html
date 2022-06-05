@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My Form</h1>
+    <form action="/login">
+        <!-- readonly는 읽는 것만 가능 -->
+        <!-- 보여줄 필요 없으면 input type="hidden" -->
+        <!-- required는 비어있지만 않으면 ok 글자수제한이나(minmaxlength있음) 기타등등 제한은 javascript로 세부 조정 -->
+        <div>이 뒤에 뭔가 있긴한데 안 보여줄거임 <input type="hidden" name="iuser" value="1" readonly></div>
+        <div>선택 : <input type="text" name="iuser" value="1" readonly></div>
+        <!-- autofocus 위에 거만 인식하지만 어쨌든 하나만 쓰기 -->
+        <div><input type="text" name="uid" placeholder="user id" autofocus required></div>
+        <div><input type="password" name="upw" placeholder="user password" required></div>
+        <div><label>프로필 사진 : <input type="file" name="pic" accept="image/*" multiple></label></div>
+        <!-- accept 설정해주면 지정한 파일 형식만 선택할 수 있음 선택창에서 보임 -->
+        <!-- multiple을 넣으면 파일 다중선택 가능 -->
+        <div><label>남긴 말 : <textarea name="cmt" cols="50" rows="4" placeholder="코멘트를 입력하세요.">이렇게</textarea></label></div>
+        <!-- textarea에는 value값이 없어서 <textarea>여기다가 쓰면 텍스트창에 입력됨</textarea> -->
+        <div>
+            <label>
+                지역 :
+                <!-- 셀렉트에 멀티플 넣으면 컨트롤 누르고 다중선택 가능 -->
+                <select name="location">
+                    <!-- value 값 안 주면 선택지 그대로 날아감 -->
+                    <!-- selected를 여러개 사용할 경우 마지막 걸로 적용 -->
+                    <option value="1">서울</option>
+                    <option value="2">대전</option>
+                    <option value="3" selected>대구</option>
+                    <option value="4">부산</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            취미 :
+            <label><input type="checkbox" name="hobby" value="1">농구</label>
+            <label><input type="checkbox" name="hobby" value="2">축구</label>
+            <label><input type="checkbox" name="hobby" value="3">배구</label>
+            <label><input type="checkbox" name="hobby" value="4">탁구</label>
+        </div>
+        <div>
+            성별 :
+            <label>여성<input type="radio" name="gender" value="f" checked></label>
+            <label>남성<input type="radio" name="gender" value="m"></label>
+            <label>그 외<input type="radio" name="gender" value="0"></label>
+            <label>알려주기 싫음<input type="radio" name="gender" value="x"></label>
+        </div>
+        <div>
+            <input type="submit" value="sign up">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+
+</html>
+<!--input 텍스트 말고는 name/value값 없으면 서버에 안 넘어감-->

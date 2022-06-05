@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contents p:nth-child(2) {color: red;}
+        .contents p:nth-of-type(3) {color: blueviolet;}
+        .contents p:nth-last-of-type(1) {color: pink;}
+        /*---------------------------------------------------------
+
+            :nth-chid(n) 전체 순서대로 n번째
+            :nth-of-type(n) 앞에 붙은 태그부터 n번째
+            :nth-last-of-type(n) 앞에 붙은 태그 뒤에서부터 n번째
+                  
+        --------------------------------------------------------- */
+        /* .contents :nth-child(odd) {color: red;} 홀
+        .contents :nth-child(even) {color: blueviolet;} 짝 */
+        /* .contents :nth-child(2n+1) 머 이런것도 됨 {color: red;} */
+    </style>
+</head>
+<body>
+    <div class="contents">
+        <h2>이용 안내</h2>
+        <p>p1</p>
+        <p>p2</p>
+        <h2>객실 소개</h2>
+        <p>p3</p>
+        <h2>예약 방법 및 요금</h2>
+        <p>p4</p>
+    </div>
+</body>
+</html>

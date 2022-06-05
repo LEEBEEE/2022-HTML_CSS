@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {background-color: aliceblue;}
+        .navi ul li {
+            display: inline-block;
+            width: 150px;
+            padding: 10px;
+        }
+
+        .navi a:link,
+        .navi a:visited {
+            display: block;
+            padding: 10px;
+            font-size: 14px;
+            color: black;
+            background-color: aliceblue;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .navi a:hover, .navi a:focus {
+            background-color: #222;
+            color: aliceblue;
+        }
+
+        .navi a:active { background-color: #f00;}
+
+        /*------------------------------------------------
+            :link 방문하지 않은 링크
+            :visted 방문한 링크
+            :hover 마우스 올렸을 때
+            :focus 눌렀을 때 포커스
+            :active 누르고 있는 중        
+        -------------------------------------------------*/
+    </style>
+</head>
+
+<body>
+    <nav class="navi">
+        <ul>
+            <li><a href="http://www.naver.com">이용 안내</a></li>
+            <li><a href="http://www.google.com">객실 소개</a></li>
+            <li><a href="http://www.airbnb.com">예약 방법 및 요금</a></li>
+            <li><a href="http://www.agoda.com">예약하기</a></li>
+        </ul>
+    </nav>
+    <script>
+        const aArr = document.querySelectorAll ('a');
+        console.log(aArr);
+        aArr.forEach (function(item) {
+            item.setAttribute ('target', '_blank');
+        });
+    </script>
+</body>
+
+</html>

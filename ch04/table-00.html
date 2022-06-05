@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th { border: 1px solid #000;}
+    </style>
+</head>
+<body>
+    <caption>표제</caption>
+    <table>
+        <thead>
+            <tr>
+                <th>날짜</th>
+                <th>시간</th>
+                <th>인원</th>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>2022.03.19</td>
+                <td>14:00-00:00</td>
+                <td>4인</td>
+            </tr>
+        <tr>
+            <!-- rowspan="2" : row를 2칸 차지한다 -->
+            <td rowspan="2">2022.03.25</td>
+            <td>20:00-22:00</td>
+            <td>5인</td>
+        </tr>
+        <tr>
+            <td>22:00-00:00</td>
+            <td>2인</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

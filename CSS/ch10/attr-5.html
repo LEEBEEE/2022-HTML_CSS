@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            ^= 시작하는 값
+            $= 끝나는 값
+            *= 중간에 포함
+         */
+        html {scroll-behavior: auto;}
+        #menu {position: fixed; left: 0; top: 0; height: 100px;}
+        div {height: 1000px;}
+        [title ^= 'eng'] {color: greenyellow;}
+        [title $= 'eng'] {color: darkgoldenrod;}
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <!--
+            href =
+                    http온라인상의리소스값
+                    내컴퓨터local에 있는 파일명(html)
+                    # (주소값이바뀜/id=#인 데로 스크롤 이동)
+        -->
+        <li><a href="#ctn1" title="english">영어</a></li>
+        <li><a href="#ctn2" title="japanese">일본어</a></li>
+        <li><a href="#ctn3" title="chinese">중국어</a></li>
+    </ul>
+    <div title="eng24sdfzx">저쩌구</div>
+    <hi title="dakxeng">어쩌구</hi>
+    <div id="ctn1">
+        ctn1
+        <a href="#menu">메뉴로 이동</a>
+    </div>
+    <div id="ctn2">
+        ctn2
+    </div>
+    <div id="ctn3">
+        ctn3
+    </div>
+</body>
+</html>

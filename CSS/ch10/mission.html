@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* label이 input을 담고 있는 것만 유지 */
+        input[type='radio']:checked + span {background-color: rgb(137, 241, 233);}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <label><input type="radio" name="room" checked><span>기본형 (최대 2인)</span></label>
+        </li>
+        <li>
+            <label><input type="radio" name="room"><span>가족형 (최대 8인)</span></label>
+        </li>
+        <li>
+            <label><span>기본형 (최대 2인)</span><input type="radio" name="room" checked></label>
+        </li>
+        <li>
+            <label><span>가족형 (최대 8인)</span><input type="radio" name="room"></label>
+        </li>
+    </ul>
+</body>
+</html>

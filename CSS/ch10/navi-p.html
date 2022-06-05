@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            :focus 키보드 이벤트에 반응할 수 있는 엘리먼트나
+            사용자의 input 클릭, 드래그 등에 반응할 수 있는 엘리먼트에 존재
+            input textarea select a 뭐 이런거
+            나머지는 tabindex 속성을 적용하면 됨
+         */
+         
+        ul {background-color: aliceblue; }
+        .navi ul li {
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            width: 150px;
+        }
+        .navi a:link, a:visited {
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            color: #222;
+        }
+        .navi a:hover {
+            background-color: #222;
+            color: aliceblue;
+        }
+        .navi a:active {background-color: bisque; color: #222;}
+    </style>
+</head>
+<body>
+    <nav class="navi">
+        <ul>
+            <li><a href="http://www.naver.com">이용 안내</a></li>
+            <li><a href="http://www.google.com">객실 소개</a></li>
+            <li><a href="http://www.airbnb.com">예약 방법 및 요금</a></li>
+            <li><a href="http://www.agoda.com">예약하기</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

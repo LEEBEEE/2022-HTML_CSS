@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 주석은 이렇게 */
+        section { font-size: 20px; }
+        div { font-weight: bold; text-align: center; }
+        .cls1 { color:blue; margin: 10px; }
+        .cls2 { color: aliceblue; background-color: black; padding: 10px; }
+        #id1 { background-color: blanchedalmond; color: aqua;}
+
+    </style>
+</head>
+<body>
+    <!--
+        선택자 {속성1: 속성값1; 속성2: 속성값2; ...}
+        전체 선택자 : * {padding:0; margin:0;}
+        태그 선택자 : div, table... {속성: 속성값;}
+        클래스 선택자 : .클래스이름 {속성: 속성값;}
+        아이디 선택자 : #아이디이름 {속성: 속성값;}
+    -->
+    <section>section</section>
+    <div>0000</div>
+    <div class="cls1">aaaa</div>
+    <div class="cls1" id="id1">dddd</div>
+    <div class="cls2">dddd</div>
+    <div class="cls2" id="id1">dddd</div>
+    <div class="cls2">dddd</div>
+</body>
+</html>

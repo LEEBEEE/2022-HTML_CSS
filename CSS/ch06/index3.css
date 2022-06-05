@@ -1,0 +1,7 @@
+ul { list-style: none;}
+a {text-decoration: none; color: black;}
+div {letter-spacing: 2.5px; line-height: 40px; text-align: center; background-color:antiquewhite;}
+
+/* 컬러는 16진수 컬러코드 rgb코드 색상이름 hsl */
+/* rgba<<< 의 a는 투명도 1불투명 0투명 0.5정도하면 반투명 */
+/* !!!!! */

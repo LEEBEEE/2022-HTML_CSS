@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box;}
+        /*nav, ul랑 nav ul이랑 다름 ,없을 땐 상위 태그에 포함된 하위 태그에만 스타일 먹임*/
+        /*nav>ul는 바로 밑에 있는 거만 적용 중간에 다른 태그 끼면 적용 안됨*/
+        nav > ul {list-style: none;}
+        div > ul {display: none;}
+        nav > ul > li {
+            display: inline-block;
+            padding: 20px;
+            margin: 0 20px;
+            border: 1px solid #222;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--배고프다-->
+    <div id="container">
+        <nav>
+            <ul>
+                <li>menu 1</li>
+                <li>menu 2</li>
+                <li>menu 3</li>
+                <li>menu 4</li>
+            </ul>
+            <div> <!--div 때문에 적용안됨-->
+                <ul>
+                    <li>menu 1</li>
+                    <li>menu 2</li>
+                    <li>menu 3</li>
+                    <li>menu 4</li>
+                </ul>
+            </div>
+        </nav>
+        <ul> <!--nav밖이라 적용안됨-->
+            <li>menu 1</li>
+            <li>menu 2</li>
+            <li>menu 3</li>
+            <li>menu 4</li>
+        </ul>
+    </div>
+</body>
+</html>
